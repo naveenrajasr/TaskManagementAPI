@@ -1,0 +1,144 @@
+{
+  "info": {
+    "_postman_id": "af3ce337-6aa6-435c-abfe-42bce45123a2",
+    "name": "TaskManagementAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56335357",
+    "_collection_link": "https://go.postman.co/collection/56335357-af3ce337-6aa6-435c-abfe-42bce45123a2?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get All Tasks",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7250/api/Tasks",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7250",
+          "path": [
+            "api",
+            "Tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Task By Id",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7250/api/Tasks/1",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7250",
+          "path": [
+            "api",
+            "Tasks",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Task",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Updated Task\",\r\n    \"description\": \"Assessment Completed\",\r\n    \"dueDate\": \"2026-07-15T18:00:00\",\r\n    \"status\": \"Completed\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7250/api/Tasks/1",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7250",
+          "path": [
+            "api",
+            "Tasks",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Task",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Postman Test\",\n  \"description\": \"Testing Postman\",\n  \"dueDate\": \"2026-07-15T18:00:00\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7250/api/Tasks",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7250",
+          "path": [
+            "api",
+            "Tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Task",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7250/api/Tasks/3",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7250",
+          "path": [
+            "api",
+            "Tasks",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
